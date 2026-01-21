@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBK Khot Rias | Wedding Organizer & Event Solution</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --gold:#c59d5f;
+    --dark:#111;
+    --light:#f4f4f4;
+    --white:#fff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:
+      radial-gradient(circle at top left, rgba(197,157,95,0.12), transparent 40%),
+      radial-gradient(circle at bottom right, rgba(0,0,0,0.08), transparent 45%),
+      #f2f2f2;
+    color:#333;
+    line-height:1.6;
+}
+
+
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#000;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    color:var(--white);
+    font-size:1.6rem;
+    letter-spacing:1px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--gold);
+}
+
+
+.hero{
+    height:90vh;
+    background:
+      linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+      url("https://source.unsplash.com/1600x900/?luxury,wedding,decoration");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero h2{
+    font-size:3.2rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.hero a{
+    display:inline-block;
+    padding:15px 40px;
+    background:var(--gold);
+    color:#fff;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero a:hover{
+    background:#b08c52;
+}
+
+/* ===============================
+   SECTION GENERAL
+================================ */
+section{
+    max-width:1200px;
+    margin:80px auto;
+    padding:70px 30px;
+    background:
+      linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.98)),
+      url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    border-radius:30px;
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:45px;
+    color:var(--gold);
+    font-size:2.2rem;
+}
+
+/* ===============================
+   SERVICES
+================================ */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.service{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.service:hover{
+    transform:translateY(-8px);
+}
+
+.service img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+}
+
+.service .content{
+    padding:25px;
+}
+
+.service h3{
+    margin-bottom:10px;
+    color:#222;
+}
+
+/* ===============================
+   GALLERY
+================================ */
+#gallery{
+    background:
+      linear-gradient(120deg, rgba(15,15,15,0.95), rgba(15,15,15,0.9)),
+      url("https://source.unsplash.com/1600x900/?wedding,event");
+    background-size:cover;
+}
+
+#gallery h2{
+    color:var(--gold);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+    box-shadow:0 12px 35px rgba(0,0,0,.6);
+}
+
+/* ===============================
+   BOOKING
+================================ */
+.booking{
+    background:
+      linear-gradient(135deg, rgba(17,17,17,0.95), rgba(17,17,17,0.9)),
+      url("https://source.unsplash.com/1200x800/?luxury,event");
+    background-size:cover;
+    color:#fff;
+}
+
+.booking form{
+    max-width:550px;
+    margin:auto;
+}
+
+.booking input,
+.booking select{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:none;
+    border-radius:10px;
+}
+
+.booking button{
+    width:100%;
+    padding:15px;
+    background:var(--gold);
+    color:#fff;
+    border:none;
+    border-radius:40px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===============================
+   WHATSAPP FLOAT
+================================ */
+.wa-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25d366;
+    color:#fff;
+    padding:15px 25px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 5px 25px rgba(0,0,0,.35);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MBK KHOT RIAS</h1>
+    <nav>
+        <a href="#services">Layanan</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#booking">Booking</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Solusi Lengkap Acara & Pernikahan</h2>
+        <p>Wedding Organizer • Rias • Karnaval • Terop • Barber</p>
+        <a href="#booking">Booking Sekarang</a>
+    </div>
+</section>
+
+<section id="services">
+<h2>Layanan Kami</h2>
+<div class="services">
+
+<div class="service">
+<img src="https://source.unsplash.com/400x300/?barber,haircut">
+<div class="content">
+<h3>Potong Rambut</h3>
+<p>Layanan barber profesional dengan harga terjangkau.</p>
+</div>
+</div>
+
+<div class="service">
+<img src="https://source.unsplash.com/400x300/?wedding,organizer">
+<div class="content">
+<h3>Wedding Organizer</h3>
+<p>Perencanaan pernikahan dari awal hingga hari H.</p>
+</div>
+</div>
+
+<div class="service">
+<img src="https://source.unsplash.com/400x300/?traditional,costume">
+<div class="content">
+<h3>Persewaan Baju</h3>
+<p>Baju adat, karnaval, dan kostum lengkap.</p>
+</div>
+</div>
+
+<div class="service">
+<img src="https://source.unsplash.com/400x300/?event,tent">
+<div class="content">
+<h3>Persewaan Terop</h3>
+<p>Tenda, dekorasi, sound system, dan perlengkapan.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2>Galeri Kegiatan</h2>
+<div class="gallery">
+<img src="https://source.unsplash.com/400x400/?wedding">
+<img src="https://source.unsplash.com/400x400/?bridal,makeup">
+<img src="https://source.unsplash.com/400x400/?event,decoration">
+<img src="https://source.unsplash.com/400x400/?barbershop">
+<img src="https://source.unsplash.com/400x400/?traditional,costume">
+<img src="https://source.unsplash.com/400x400/?wedding,stage">
+</div>
+</section>
+
+<section id="booking" class="booking">
+<h2>Form Booking</h2>
+<form onsubmit="sendBooking(event)">
+<input type="text" id="nama" placeholder="Nama Lengkap" required>
+<input type="text" id="alamat" placeholder="Alamat Lengkap" required>
+
+<select id="layanan" onchange="updateDetail()" required>
+<option value="">-- Pilih Layanan --</option>
+<option value="Potong Rambut">Potong Rambut</option>
+<option value="Wedding Organizer">Wedding Organizer</option>
+<option value="Persewaan Baju">Persewaan Baju</option>
+<option value="Persewaan Terop">Persewaan Terop</option>
+</select>
+
+<select id="detail" required>
+<option value="">-- Pilih Detail --</option>
+</select>
+
+<input type="date" id="tanggal" required>
+<input type="time" id="jam" required>
+
+<button>Booking via WhatsApp</button>
+</form>
+</section>
+
+<footer>
+© 2026 MBK Khot Rias • Satu tempat, semua acara beres 🎉
+</footer>
+
+<a href="https://wa.me/6282336556567" target="_blank" class="wa-float">💬 WhatsApp</a>
+
+<script>
+// ===============================
+// DATA & SIMULASI BACKEND
+// ===============================
+let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+
+// ===============================
+// UPDATE DETAIL BERDASARKAN LAYANAN
+// ===============================
+function updateDetail(){
+    const layanan = document.getElementById("layanan").value;
+    const detail = document.getElementById("detail");
+    let options = [];
+
+    if(layanan === "Potong Rambut"){
+        options = ["Dewasa","Anak","Cuci + Potong","Styling"];
+    }else if(layanan === "Wedding Organizer"){
+        options = ["Silver","Gold","Platinum","Akad","Resepsi"];
+    }else if(layanan === "Persewaan Baju"){
+        options = ["Adat Jawa","Adat Bali","Karnaval","Couple"];
+    }else if(layanan === "Persewaan Terop"){
+        options = ["Terop 4x6","Terop 6x8","Dekorasi","Sound System"];
+    }
+
+    detail.innerHTML = '<option value="">-- Pilih Detail --</option>';
+    options.forEach(item=>{
+        let opt = document.createElement("option");
+        opt.value = item;
+        opt.textContent = item;
+        detail.appendChild(opt);
+    });
+}
+
+// ===============================
+// KIRIM BOOKING
+// ===============================
+function sendBooking(e){
+    e.preventDefault();
+
+    const data = {
+        nama: nama.value,
+        alamat: alamat.value,
+        layanan: layanan.value,
+        detail: detail.value,
+        tanggal: tanggal.value,
+        jam: jam.value
+    };
+
+    bookings.push(data);
+    localStorage.setItem("bookings", JSON.stringify(bookings));
+
+    const pesan =
+`Halo MBK Khot Rias,
+Nama: ${data.nama}
+Alamat: ${data.alamat}
+Layanan: ${data.layanan}
+Detail: ${data.detail}
+Tanggal: ${data.tanggal}
+Jam: ${data.jam}`;
+
+    window.open("https://wa.me/6282336556567?text="+encodeURIComponent(pesan),"_blank");
+}
+</script>
+
+</body>
+</html>
